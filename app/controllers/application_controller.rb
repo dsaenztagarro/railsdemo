@@ -5,12 +5,6 @@ class ApplicationController < ActionController::Base
 
   before_filter :set_current_env
 
-  def append_info_to_payload(payload)
-    super
-    debugger
-    payload[:client_ip] = request.remote_ip
-  end
-
   def set_current_env
     current_env
   end
