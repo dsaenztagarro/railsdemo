@@ -10,6 +10,8 @@
 class CurrentEnv
   attr_reader :request_context
 
+  attr_accessor :current_job # [BebanjoJobs::Job]
+
   # @param request [ActionDispatch::Request]
   def request_context=(request)
     @request_context = RequestContext.wrap(request)

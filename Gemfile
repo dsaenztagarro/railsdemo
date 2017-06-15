@@ -3,6 +3,7 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.8'
+gem 'sidekiq', '4.1'
 gem 'delayed_job_active_record'
 
 gem 'mysql2', '0.3.20'
